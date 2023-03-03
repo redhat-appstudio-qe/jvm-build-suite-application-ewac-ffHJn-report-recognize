@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-uamh
+  namespace: jvm-build-pbzu-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:227329282b7138d2afeb5abd3867fc0b159fda61a9f0d24e0d0b5f846eacafe4
+        name: container-image
+        resources: {}
+status: {}
